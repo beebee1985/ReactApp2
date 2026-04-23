@@ -1,0 +1,118 @@
+/* Projects Page Styles */
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Page Header */
+.projects-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #646cff;
+  box-shadow: 0 10px 30px rgba(100, 108, 255, 0.2);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Technologies */
+.project-technologies {
+  margin-bottom: 1.5rem;
+}
+
+.project-technologies h3 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: #2d2d2d;
+  color: #646cff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: 1px solid #646cff;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

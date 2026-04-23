@@ -1,0 +1,178 @@
+/* About Page Styles */
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Page Header */
+.about-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Section Styles */
+.about-section {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #646cff;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #646cff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #646cff;
+  border: 3px solid #1a1a1a;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-period {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+/* Skills List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: #2d2d2d;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.skill-category h3 {
+  font-size: 1.3rem;
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  color: #aaa;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.skill-category li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #646cff;
+  font-size: 1.2rem;
+}
+
+/* Goals List */
+.goals-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-list li {
+  color: #aaa;
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.goals-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #646cff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.75rem;
+  }
+}

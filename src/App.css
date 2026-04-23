@@ -1,0 +1,63 @@
+/* Global App Styles */
+
+/* Main app container */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area - grows to fill available space */
+.main-content {
+  flex: 1;
+  padding-top: 60px; /* Account for fixed navigation */
+}
+
+/* Footer styles */
+.app-footer {
+  background-color: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Button styles used across the site */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #646cff;
+  border: 2px solid #646cff;
+}
+
+.btn-secondary:hover {
+  background-color: #646cff;
+  color: white;
+  transform: translateY(-2px);
+}
